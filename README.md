@@ -41,7 +41,7 @@ To allow the script to request a "New Identity" from Tor, you must enable the Co
   <li>pkg update && pkg upgrade -y</li>
   <li>pkg install tor curl python netcat-openbsd -y</li>
   <li>pkg install git -y</li>
-  <li>git clone </li>
+  <li>git clone https://github.com/whitedevil-21/IP-CHANGER.git </li>
   <li>chmod +x ipchanger.sh</li>
   <li>bash ipchanger.sh</li>
 </ul>
