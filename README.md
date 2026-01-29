@@ -70,4 +70,4 @@ To allow the script to request a "New Identity" from Tor, you must enable the Co
   <li>If you'd like to improve the automation or add a Python wrapper, feel free to fork this repo and submit a PR!</li>
 </ul>
 
-<h3>Developed by @whitedevil-21</h3>
+<h3>Developed by AMIT DEVI(whitedevil-21)</h3>
