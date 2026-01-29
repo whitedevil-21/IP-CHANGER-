@@ -45,3 +45,29 @@ To allow the script to request a "New Identity" from Tor, you must enable the Co
   <li>chmod +x ipchanger.sh</li>
   <li>bash ipchanger.sh</li>
 </ul>
+
+## 📖 How it Works
+
+<p>The script initializes a Tor circuit and enters a loop where it:</p>
+<ol>
+  <li>Verifies the current IP via the Tor SOCKS5 proxy ($127.0.0.1:9050$).</li>
+  <li>Sends a SIGNAL NEWNYM command to Tor's Control Port ($9051$).</li>
+  <li>Forces a circuit switch to assign a new exit node (and therefore a new IP).</li>
+</ol>
+<hr>
+
+## ⚠️ Important Considerations
+
+<ul>
+  <b><li>Proxy Settings: This script only changes the IP of the Tor circuit. To route other apps through this IP, configure them to use the SOCKS5 proxy at 127.0.0.1:9050.</li></b>
+  <b><li>Global Traffic: This tool does not act as a system-wide VPN. For full-device anonymity, consider using Orbot in VPN mode.</li></b>
+  <b><li>Troubleshooting: If you see "connection refused," double-check that your torrc file was saved correctly and that Tor is running.</li></b>
+</ul>
+
+## ⓘ Contributing
+
+<ul>
+  <li>If you'd like to improve the automation or add a Python wrapper, feel free to fork this repo and submit a PR!</li>
+</ul>
+
+<h3>Developed by @whitedevil-21</h3>
